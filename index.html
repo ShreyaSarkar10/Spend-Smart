@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spend-Smart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="head">Spend-Smart</h1>
+    <div class="container">
+      <h2>Your Balance</h2>
+      <h1 id="balance">$0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h3>Income</h3>
+          <p id="money-plus" class="money-plus">+$0.00</p>
+        </div>
+        <div>
+          <h3>Expense</h3>
+          <p id="money-minus" class="money-minus">-$0.00</p>
+        </div>
+      </div>
+      <h2>Add New Transition</h2>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">About</label>
+          <input type="text" id="text" placeholder="About the transaction" />
+        </div>
+        <div class="form-control">
+          <label for="amount"> Amount</label>
+          <br />
+            (Use (-) for expense and (+) for income )
+            <br />
+        </label>
+        <br />
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <br>
+        <button class="btn">Add transaction</button>
+      </form>
+      <h2>History</h2>
+      <ul id="list" class="list"></ul>
+    </div>
+    <!-- JavaYscript Project  -->
+    <script src="script.js"></script>
+  </body>
+</html>
